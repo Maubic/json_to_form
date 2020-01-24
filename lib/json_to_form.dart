@@ -44,8 +44,9 @@ class _CoreFormState extends State<CoreForm> {
               item['title'],
               style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
             )));
-        list_widget.add(new TextField(
+        list_widget.add(new TextFormField(
           controller: null,
+          initialValue: item['response'],
           decoration: new InputDecoration(
             hintText: item['placeholder'] ?? "",
           ),
